@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<% include ./partials/header.ejs %>
+
+<h1><%= title %></h1>
+
+<main class="container">
+  <section class="jumbotron">
+    This application, built in Winter 2017, uses NodeJs, ExpressJs,
+    MongoDB, Mongoose, and Twitter Bootstrap for COMP2068 Advanced Web Programming.  Source files are stored on GitHub.
+    This helps the user to add any team for a patricular sport and also helps the user to add the team members for that particular team and their number
+    and also helps the user to add update and delete any record
+  </section>
+</main>
+
+<% include ./partials/footer.ejs %>
